@@ -58,8 +58,9 @@ public class MainToko {
                 break;
 
                 case 4:
-                    System.out.println("Mengurutkan Data");
+                    System.out.println("Mengurutkan Data berdasarkan Nama Barang");
                     service.sorting(tr);
+                break;
 
                 case 5:
                     System.out.println("Keluar dari Program");

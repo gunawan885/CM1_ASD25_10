@@ -6,8 +6,6 @@ public class Service10 {
         if (index<trs.length) {
             trs[index] = trp;
             index++;
-        }else{
-            System.out.println("Data sudah penuh");
         }
     }
 
