@@ -18,11 +18,7 @@ public class Barang10 {
     }
 
     void tampilDataBarang(){
-        System.out.println("kode barang: "+ kodeBarang);
-        System.out.println("kode barang: "+ nama);
-        System.out.println("kode barang: "+ kategori);
-        System.out.println("kode barang: "+ stok);
-        System.out.println("kode barang: "+ harga);
+        System.out.printf("%-15s %-23s %-12s %-9d %-5d \n",kodeBarang,nama,kategori,stok,harga);
     }
     
 }

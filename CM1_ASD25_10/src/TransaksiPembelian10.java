@@ -3,12 +3,13 @@ public class TransaksiPembelian10 {
     String namaPembeli;
     String tanggalPembelian;
     int qty;
-    Barang10  brg = new Barang10() ;
+    Barang10 brg;
 
     TransaksiPembelian10(){
         
     }
-    TransaksiPembelian10(String kodeTransaksi,String namaPembeli,String tanggalPembelian, int qty, Barang10 brg){
+
+    TransaksiPembelian10(String kodeTransaksi,String namaPembeli,String tanggalPembelian,int qty, Barang10 brg){
         this.kodeTransaksi = kodeTransaksi;
         this.namaPembeli = namaPembeli;
         this.tanggalPembelian = tanggalPembelian;
@@ -17,9 +18,6 @@ public class TransaksiPembelian10 {
     }
 
     void tampilDataTransaksi(){
-        System.out.println("kode barang: "+ kodeTransaksi);
-        System.out.println("kode barang: "+ namaPembeli);
-        System.out.println("kode barang: "+ tanggalPembelian);
-        System.out.println("kode barang: "+ qty);
+        System.out.printf("%-18s %-19s %-21s %-18s %-13d %-12d \n", kodeTransaksi,namaPembeli,tanggalPembelian,brg.nama,qty,brg.harga);
     }
 }
